@@ -8,6 +8,7 @@ const VideoCard = ({ video, isRow }) => {
 
   return (
     <div
+    
       onClick={() => navigate(`/watch?v=${video.videoId}`)}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -16,7 +17,7 @@ const VideoCard = ({ video, isRow }) => {
      
       <div>
         <img
-          className="rounded-lg w-full h-full"
+          className="v-pic rounded-lg w-full h-full"
           src={
             isHover && video.richThumbnail
               ? video.richThumbnail[0].url

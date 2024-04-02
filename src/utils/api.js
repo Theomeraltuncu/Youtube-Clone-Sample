@@ -8,7 +8,7 @@ const api= axios.create({
         lang: 'en'
     },
     headers: {
-        'X-RapidAPI-Key': '903f85e181msh699b588da79c405p111e0ajsne80db8e842e2',
+        'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
         'X-RapidAPI-Host': 'yt-api.p.rapidapi.com'
     }
 })
