@@ -8,6 +8,10 @@ body{
     overflow: hidden;
 }
 
+.input{
+    width: 500px;
+  }
+
 .videos{
     width: 100%;
     display: grid;

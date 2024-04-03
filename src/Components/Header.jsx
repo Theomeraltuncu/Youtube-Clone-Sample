@@ -7,7 +7,7 @@ import { MdVideoLibrary } from "react-icons/md";
 const Header = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
-    e.preventtDefault();
+    e.preventDefault();
 
     const text = e.target[0].value;
 
@@ -30,7 +30,7 @@ const Header = () => {
       >
         <input
           placeholder="Search"
-          className="group-hover:border-blue-500 group-hover:border border border-transparent bg-black text-white px-5 py-2 outline-none rounded-l-[20px] focus:border-blue-500"
+          className="group-hover:border-blue-500 group-hover:border border border-transparent bg-black text-white px-5 py-2 outline-none rounded-l-[20px] focus:border-blue-500 input"
           type="text"
         />
         <button className="border-l px-4 text-2xl bg-zinc-800">
