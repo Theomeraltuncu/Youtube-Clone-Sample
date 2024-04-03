@@ -1,9 +1,9 @@
-import { PiUserCircleFill } from 'react-icons/pi';
+import { PiUserCircleFill } from "react-icons/pi";
 
 const Loader = () => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4];
 
-  return arr.map((item) => (
+  return arr.map(() => (
     <div className="p-4 rounded shadow animate-pulse md:p-6">
       <div className="flex items-center justify-center h-48 mb-4  rounded bg-gray-700" />
 

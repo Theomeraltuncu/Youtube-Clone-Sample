@@ -8,16 +8,14 @@ const VideoCard = ({ video, isRow }) => {
 
   return (
     <div
-    
       onClick={() => navigate(`/watch?v=${video.videoId}`)}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       className={`${isRow ? "row" : ""} cursor-pointer`}
     >
-     
       <div>
         <img
-          className="v-pic rounded-lg w-full h-full"
+          className="rounded-lg w-full h-full"
           src={
             isHover && video.richThumbnail
               ? video.richThumbnail[0].url
@@ -26,7 +24,6 @@ const VideoCard = ({ video, isRow }) => {
         />
       </div>
 
-     
       <div className="flex gap-4 mt-5">
         <img
           className="c-pic w-14 h-14 rounded-full"

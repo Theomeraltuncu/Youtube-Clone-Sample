@@ -1,9 +1,5 @@
-
-
 const Undefined = () => {
-  return (
-    <div>Undefined</div>
-  )
-}
+  return <div>Undefined</div>;
+};
 
-export default Undefined
+export default Undefined;
